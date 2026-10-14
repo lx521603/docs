@@ -64,19 +64,19 @@ export default defineAppConfig({
     }]
   },
   toc: {
-    title: 'Table of Contents',
+    title: '章节',
     bottom: {
-      title: 'Community',
-      edit: 'https://github.com/nuxt-ui-templates/docs/edit/main/content',
+      title: '社区',
+      edit: 'https://zaeth.com',
       links: [{
         icon: 'i-lucide-star',
-        label: 'Star on GitHub',
-        to: 'https://github.com/nuxt/ui',
+        label: 'Mirai Studio',
+        to: 'https://mirai.st',
         target: '_blank'
       }, {
         icon: 'i-lucide-book-open',
-        label: 'Nuxt UI docs',
-        to: 'https://ui.nuxt.com/docs/getting-started/installation/nuxt',
+        label: 'Sai Studio',
+        to: 'https://sai.st',
         target: '_blank'
       }]
     }

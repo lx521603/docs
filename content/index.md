@@ -25,12 +25,12 @@ seo:
   :::u-button
   ---
   color: neutral
-  icon: simple-icons-github
+  icon: simple-icons-instagram
   size: xl
-  to: https://github.com/nuxt-content/docus
+  to: https://go.91.pt/instagram
   variant: outline
   ---
-  文档
+  Ins
   :::
 
 #headline
@@ -366,5 +366,3 @@ seo:
     ::::
   :::
 ::
-
-

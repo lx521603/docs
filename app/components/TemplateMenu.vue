@@ -2,26 +2,26 @@
 import type { DropdownMenuItem } from '@nuxt/ui'
 
 const items: DropdownMenuItem[] = [{
-  label: 'Starter',
-  to: 'https://starter-template.nuxt.dev/'
+  label: 'Zaeth',
+  to: 'https://zaeth.com/'
 }, {
-  label: 'Landing',
-  to: 'https://landing-template.nuxt.dev/'
+  label: 'Mirai Studio',
+  to: 'https://mirai.st/'
 }, {
-  label: 'Docs',
-  to: 'https://docs-template.nuxt.dev/',
+  label: 'Asura',
+  to: 'https://asura.im/',
   color: 'primary',
   checked: true,
   type: 'checkbox'
 }, {
-  label: 'SaaS',
-  to: 'https://saas-template.nuxt.dev/'
+  label: 'Velvify',
+  to: 'https://velvify.com/'
 }, {
-  label: 'Dashboard',
-  to: 'https://dashboard-template.nuxt.dev/'
+  label: 'Sai',
+  to: 'https://sai.st/'
 }, {
-  label: 'Zaeth.com',
-  to: 'https://zaeth.com/'
+  label: '91',
+  to: 'https://91.pt/'
 }]
 </script>
 
@@ -35,7 +35,7 @@ const items: DropdownMenuItem[] = [{
     size="xs"
   >
     <UButton
-      label="Docs"
+      label="Asura"
       variant="subtle"
       trailing-icon="i-lucide-chevron-down"
       size="xs"
