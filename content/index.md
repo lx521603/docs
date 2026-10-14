@@ -49,10 +49,10 @@ seo:
     ---
       :::::u-color-mode-image
       ---
-      height: 320
-      width: 500
+      height: 400
+      width: 400
       alt: Beautiful visual powered by UI
-      class: w-full h-80 object-cover rounded-lg
+      class: w-full h-100 object-cover rounded-lg
       dark: /landing/Q30A3553.webp
       light: /landing/Q30A3553.webp
       ---
@@ -73,10 +73,10 @@ seo:
     ---
       :::::u-color-mode-image
       ---
-      height: 340
+      height: 400
       width: 859
       alt: Beautiful visual powered by UI
-      class: w-full h-90 object-cover rounded-lg
+      class: w-full h-100 object-cover rounded-lg
       dark: /landing/Q30A0695.webp
       light: /landing/Q30A0695.webp
       ---
@@ -156,7 +156,7 @@ seo:
       height: 570
       width: 400
       alt: Beautiful visual powered by UI
-      class: w-full h-160 object-cover rounded-lg
+      class: w-full h-140 object-cover rounded-lg
       dark: /landing/DSC00975.webp
       light: /landing/DSC00975.webp
       ---
@@ -201,8 +201,15 @@ seo:
     class: col-span-2
     target: _blank
     ---
-      :::::browser-frame
-      :video{.rounded-md controls loop src="https://res.cloudinary.com/nuxt/video/upload/v1767647099/studio/studio-demo_eiofld.mp4"}
+      :::::u-color-mode-image
+      ---
+      height: 554
+      width: 859
+      alt: Native MCP server and AI-ready content illustration
+      class: rounded-lg
+      dark: /landing/DSC00608.webp
+      light: /landing/DSC00608.webp
+      ---
       :::::
 
     #title
@@ -221,7 +228,7 @@ seo:
       :::::u-color-mode-image
       ---
       alt: Nuxt Image visual
-      class: w-[100%] lg:w-[100%] my-12 lg:my-0
+      class: rounded-lg
       dark: /landing/Q30A3919.webp
       light: /landing/Q30A3919.webp
       ---
@@ -242,10 +249,10 @@ seo:
     ---
       :::::u-color-mode-image
       ---
-      height: 600
-      width: 403
-      alt: Internationalization illustration
-      class: w-full my-12 lg:my-0
+      height: 570
+      width: 400
+      alt: Beautiful visual powered by UI
+      class: w-full h-150 object-cover rounded-lg
       dark: /landing/Q30A126.webp
       light: /landing/Q30A126.webp
       ---
@@ -266,7 +273,7 @@ seo:
     ---
       :::::u-color-mode-image
       ---
-      height: 585
+      height: 560
       width: 859
       alt: Native MCP server and AI-ready content illustration
       class: w-full h-auto rounded-lg translate-y-10
