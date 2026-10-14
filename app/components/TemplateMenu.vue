@@ -20,20 +20,8 @@ const items: DropdownMenuItem[] = [{
   label: 'Dashboard',
   to: 'https://dashboard-template.nuxt.dev/'
 }, {
-  label: 'Chat',
-  to: 'https://chat-template.nuxt.dev/'
-}, {
-  label: 'Portfolio',
-  to: 'https://portfolio-template.nuxt.dev/'
-}, {
-  label: 'Changelog',
-  to: 'https://changelog-template.nuxt.dev/'
-}, {
-  label: 'Editor',
-  to: 'https://editor-template.nuxt.dev/'
-}, {
-  label: 'Calendar',
-  to: 'https://calendar-template.nuxt.dev/'
+  label: 'Zaeth.com',
+  to: 'https://zaeth.com/'
 }]
 </script>
 

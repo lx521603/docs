@@ -7,8 +7,21 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-og-image',
     'nuxt-llms',
-    '@nuxtjs/mcp-toolkit'
+    '@nuxtjs/mcp-toolkit',
+    'nuxt-studio'
   ],
+
+  studio: {
+    route: '/admin', 
+    repository: {
+      provider: 'github',
+      owner: 'lx521603', // 👈 替换为你自己的
+      repo: 'docs',       // 👈 替换为你自己的
+      rootDir: 'content',      // 👈 你的 markdown 文件所在的目录
+    },
+  },
+
+
 
   devtools: {
     enabled: true

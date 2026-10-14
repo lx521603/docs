@@ -1,263 +1,363 @@
 ---
 seo:
-  title: Nuxt Docs Template
-  description: Create stunning, fast and SEO-optimized documentation sites with Nuxt UI.
+  title: Write beautiful docs with Markdown
+  description: Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box. Docus brings together the best of the Nuxt ecosystem. Powered by Nuxt UI.
 ---
 
-::u-page-hero{class="dark:bg-gradient-to-b from-neutral-900 to-neutral-950"}
----
-orientation: horizontal
----
-#top
-:hero-background
-
+::u-page-hero
 #title
-Ship Beautiful [Documentation]{.text-primary}.
+老李游记
 
 #description
-Build professional documentation with Nuxt UI's powerful components, enhanced typography, and seamless Nuxt Content integration. The same system trusted by the entire [Nuxt ecosystem](https://nuxt.com).
+记录沿途的风景 :br 技术的探索与生活的点滴
 
 #links
   :::u-button
   ---
-  to: /getting-started
+  color: neutral
   size: xl
+  to: /getting-started
   trailing-icon: i-lucide-arrow-right
   ---
-  Get started
+  文档
   :::
 
   :::u-button
   ---
-  icon: i-simple-icons-github
   color: neutral
-  variant: outline
+  icon: simple-icons-github
   size: xl
-  to: https://github.com/nuxt-ui-templates/docs
-  target: _blank
+  to: https://github.com/nuxt-content/docus
+  variant: outline
   ---
-  Use this template
+  文档
   :::
 
-#default
-  :::prose-pre
-  ---
-  code: |
-    export default defineNuxtConfig({
-      modules: [
-        '@nuxt/ui',
-        '@nuxt/content',
-        'nuxt-og-image',
-        'nuxt-llms'
-      ],
-
-      css: ['~/assets/css/main.css']
-    })
-  filename: nuxt.config.ts
-  ---
-
-  ```ts [nuxt.config.ts]
-  export default defineNuxtConfig({
-    modules: [
-      '@nuxt/ui',
-      '@nuxt/content',
-      'nuxt-og-image',
-      'nuxt-llms'
-    ],
-
-    css: ['~/assets/css/main.css']
-  })
-  ```
+#headline
+  :::u-button{size="sm" to="https://mirai.st" variant="outline"}
+  主站 →
   :::
 ::
 
-::u-page-section{class="dark:bg-neutral-950"}
-#title
-Powered by Nuxt UI components
+::u-page-section
+  :::u-page-grid
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: group col-span-2 lg:col-span-1
+    target: _blank
+    ---
+      :::::u-color-mode-image
+      ---
+      height: 320
+      width: 500
+      alt: Beautiful visual powered by UI
+      class: w-full h-80 object-cover rounded-lg
+      dark: /landing/Q30A3553.webp
+      light: /landing/Q30A3553.webp
+      ---
+      :::::
 
-#links
-  :::u-button
-  ---
-  color: neutral
-  size: lg
-  target: _blank
-  to: https://ui.nuxt.com/docs/getting-started/installation/nuxt
-  trailingIcon: i-lucide-arrow-right
-  variant: subtle
-  ---
-  Explore Nuxt UI
-  :::
+    #title
+    ✨ 笃定的弧度
 
-#features
-  :::u-page-feature
-  ---
-  icon: i-lucide-palette
-  ---
-  #title
-  100+ UI Components
+    #description
+    那种笑不张扬，但你一眼就知道——她清楚自己值得所有的好。
+    ::::
 
-  #description
-  Access the complete Nuxt UI component library. From badges to modals, everything styled and accessible out of the box.
-  :::
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2
+    target: _blank
+    ---
+      :::::u-color-mode-image
+      ---
+      height: 340
+      width: 859
+      alt: Beautiful visual powered by UI
+      class: w-full h-90 object-cover rounded-lg
+      dark: /landing/Q30A0695.webp
+      light: /landing/Q30A0695.webp
+      ---
+      :::::
 
-  :::u-page-feature
-  ---
-  icon: i-lucide-type
-  ---
-  #title
-  Beautiful Typography
+    #title
+    每一次快门、每一段文字
 
-  #description
-  Pre-styled prose components with perfect visual harmony. No need for @tailwindcss/typography - get precise control over every element.
-  :::
+    #description
+    都是对时光的温柔收藏。这里记录着旅途中的风景、街角的偶遇、以及那些让人忍不住微笑的小确幸。
+    ::::
 
-  :::u-page-feature
-  ---
-  icon: i-lucide-layers
-  ---
-  #title
-  Rich Prose Components
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2
+    target: _blank
+    ---
+      :::::tabs
+        ::::::tabs-item{.mt-5 icon="i-lucide-eye" label="装备"}
+          :::::::note{.my-0}
+          Canon 5D Mark III、Canon EOS R8、Sony A7C II、iPhone 16
+          :::::::
 
-  #description
-  Accordions, cards, callouts, tabs, steps, code blocks, and more - all provided by Nuxt UI for interactive documentation.
-  :::
+          :::::::tip{.my-0}
+          Canon EF 50mm f/1.2L、EF 35mm f/2 IS、EF 135mm f/2L、EF 24-105mm f/4L
+          :::::::
 
-  :::u-page-feature
-  ---
-  icon: i-lucide-search
-  ---
-  #title
-  Built-in Search
+          :::::::warning{.my-0}
+          Sigma MC-11、JCC EF-EOSR
+          :::::::
 
-  #description
-  Full-text search with ContentSearch component. No need for Algolia - instant, relevant results with keyboard shortcuts (⌘K).
-  :::
+          :::::::caution{.my-0}
+          Godox V860III、Godox V520、Godox V480
+          :::::::
+        ::::::
+      :::::
 
-  :::u-page-feature
-  ---
-  icon: i-lucide-navigation
-  ---
-  #title
-  Smart Navigation
+    #title
+    用镜头记录生活
 
-  #description
-  Auto-generated navigation with ContentNavigation and ContentToc components. Sticky table of contents and prev/next links.
-  :::
+    #description
+    部分设备
+    ::::
 
-  :::u-page-feature
-  ---
-  icon: i-lucide-moon
-  ---
-  #title
-  Dark Mode Ready
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2 md:col-span-1
+    ---
+      :::::u-color-mode-image
+      ---
+      height: 500
+      width: 600
+      alt: Beautiful visual powered by UI
+      class: w-full h-80 object-cover rounded-lg
+      dark: /landing/Q30A3643.webp
+      light: /landing/Q30A3643.webp
+      ---
+      :::::
 
-  #description
-  Automatic theme switching with smooth transitions. Respects system preferences and remembers user choice.
+    #title
+    🚂 铁轨上的市井
+
+    #description
+    汽笛声起，遮阳棚如潮水般退去。火车贴着新鲜的蔬菜与鱼虾缓缓碾过，没有惊慌，只有习以为常的默契。车轮远去，摊位瞬间复原，仿佛什么都没发生过。这是铁轨与生活的奇妙共生。
+    ::::
+
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2 md:col-span-1 min-h-[450px]
+    target: _blank
+    ---
+      :::::u-color-mode-image
+      ---
+      height: 570
+      width: 400
+      alt: Beautiful visual powered by UI
+      class: w-full h-160 object-cover rounded-lg
+      dark: /landing/DSC00975.webp
+      light: /landing/DSC00975.webp
+      ---
+      :::::
+
+    #title
+    烈日下的光影
+
+    #description
+    盛夏的光线是最奢侈的馈赠。正午的硬光切割出锋利的阴影，午后的斜阳把树影拉得修长。
+    ::::
+
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2
+    target: _blank
+    ---
+      :::::u-color-mode-image
+      ---
+      height: 554
+      width: 859
+      alt: Built-in navigation and full-text search
+      class: rounded-lg
+      dark: /landing/Q30A5015.webp
+      format: webp
+      light: /landing/Q30A5015.webp
+      loading: lazy
+      ---
+      :::::
+
+    #title
+    霓虹流淌的烟火人间
+
+    #description
+    华灯初上，步行街便成了一条流动的光河。放慢快门，让匆匆的人流化作柔光，定格这座城市的体温与呼吸。Canon 5d3 50mm f/1.2 全开。
+    ::::
+
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2
+    target: _blank
+    ---
+      :::::browser-frame
+      :video{.rounded-md controls loop src="https://res.cloudinary.com/nuxt/video/upload/v1767647099/studio/studio-demo_eiofld.mp4"}
+      :::::
+
+    #title
+    Edit your content in production with [Nuxt Studio](https://nuxt.studio)
+
+    #description
+    Write and manage your content visually, with zero Markdown knowledge required. Let your non technical colleagues collaborate on the documentation and integrate Vue components without code skills.
+    ::::
+
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2 lg:col-span-1
+    target: _blank
+    ---
+      :::::u-color-mode-image
+      ---
+      alt: Nuxt Image visual
+      class: w-[100%] lg:w-[100%] my-12 lg:my-0
+      dark: /landing/Q30A3919.webp
+      light: /landing/Q30A3919.webp
+      ---
+      :::::
+
+    #title
+    🤪 不设防的生动
+
+    #description
+    有时候，最动人的肖像，恰恰诞生于放弃“完美”的那一秒。
+    ::::
+
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2 lg:col-span-1
+    target: _blank
+    ---
+      :::::u-color-mode-image
+      ---
+      height: 600
+      width: 403
+      alt: Internationalization illustration
+      class: w-full my-12 lg:my-0
+      dark: /landing/Q30A126.webp
+      light: /landing/Q30A126.webp
+      ---
+      :::::
+
+    #title
+    转角遇见的未命名诗篇
+
+    #description
+    不预设构图，不等光线完美，只是用眼睛先于快门去生活。不预设构图，不等光线完美，只是用眼睛先于快门去生活。
+    ::::
+
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2
+    target: _blank
+    ---
+      :::::u-color-mode-image
+      ---
+      height: 585
+      width: 859
+      alt: Native MCP server and AI-ready content illustration
+      class: w-full h-auto rounded-lg translate-y-10
+      dark: /landing/Q30A5184.webp
+      light: /landing/Q30A5184.webp
+      ---
+      :::::
+
+    #title
+    🙏 结缘
+
+    #description
+    殿外香火正旺，每个人都在求点什么。而这条绳，大概什么也保不了，只是让人在转身下山的那一刻，心里稍微踏实一点。
+    ::::
+
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2
+    target: _blank
+    ---
+      :::::u-color-mode-image
+      ---
+      height: 340
+      width: 859
+      alt: Beautiful visual powered by UI
+      class: w-full h-90 object-cover rounded-lg
+      dark: /landing/Q30A4133.webp
+      light: /landing/Q30A4133.webp
+      ---
+      :::::
+
+    #title
+    🔥 忘我时刻
+
+    #description
+    身体跟着节奏失控，灵魂在人群里找到自由。这一刻，不需要理由。
+    ::::
+
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2 lg:col-span-1
+    ---
+      :::::div{.flex-1.flex.flex-col.items-center.justify-center.py-8.text-center}
+        ::::::div{.flex.flex-col.gap-3.w-full.max-w-xs}
+          :::::::u-button
+          ---
+          block: true
+          color: primary
+          size: lg
+          to: https://zaeth.com
+          trailing-icon: i-lucide-arrow-right
+          ---
+          访问 Zaeth.com
+          :::::::
+
+          :::::::u-button
+          ---
+          block: true
+          color: neutral
+          size: lg
+          target: _blank
+          to: https://mirai.st
+          variant: outline
+          ---
+          Mirai Studio
+          :::::::
+
+          :::::::u-button
+          ---
+          block: true
+          color: neutral
+          icon: i-simple-icons-instagram
+          size: lg
+          target: _blank
+          to: https://go.91.pt/instagram
+          variant: outline
+          ---
+          Instagram
+          :::::::
+        ::::::
+      :::::
+
+    #title
+    [联系]{.text-primary} 我?
+
+    #description
+    请点击下方按钮联系我！
+    ::::
   :::
 ::
 
-::u-page-section{class="dark:bg-neutral-950"}
-#title
-Enhanced with Nuxt Content
-
-#links
-  :::u-button
-  ---
-  color: neutral
-  size: lg
-  target: _blank
-  to: https://content.nuxt.com/docs/getting-started/installation
-  trailingIcon: i-lucide-arrow-right
-  variant: subtle
-  ---
-  Explore Nuxt Content
-  :::
-
-#features
-  :::u-page-feature
-  ---
-  icon: i-simple-icons-markdown
-  ---
-  #title
-  MDC Enhanced Markdown
-
-  #description
-  Write in Markdown while embedding Vue components. Seamlessly integrate interactive elements in your content.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-file-text
-  ---
-  #title
-  File-based Routing
-
-  #description
-  Organize content in folders and files. Your documentation structure automatically becomes your navigation.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-code
-  ---
-  #title
-  Syntax Highlighting
-
-  #description
-  Beautiful code blocks with language detection, line numbers, and copy buttons. Support for 100+ languages.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-database
-  ---
-  #title
-  Content Database
-
-  #description
-  Query your content with a MongoDB-like API. Filter, sort, and search through your documentation programmatically.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-file-code
-  ---
-  #title
-  Frontmatter Support
-
-  #description
-  Add metadata to your content files. Define SEO tags, navigation properties, and custom fields.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-git-branch
-  ---
-  #title
-  Version Control
-
-  #description
-  Content lives in your repository. Branch, review, and deploy documentation alongside your code.
-  :::
-::
-
-::u-page-section{class="dark:bg-gradient-to-b from-neutral-950 to-neutral-900"}
-  :::u-page-c-t-a
-  ---
-  links:
-    - label: Start building
-      to: '/getting-started'
-      trailingIcon: i-lucide-arrow-right
-    - label: View on GitHub
-      to: 'https://github.com/nuxt-ui-templates/docs'
-      target: _blank
-      variant: subtle
-      icon: i-simple-icons-github
-  title: Ready to build an amazing documentation?
-  description: Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today.
-  class: dark:bg-neutral-950
-  ---
-
-  :stars-bg
-  :::
-::
+/

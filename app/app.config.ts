@@ -4,6 +4,18 @@ export default defineAppConfig({
       primary: 'green',
       neutral: 'slate'
     },
+    pageHero: {
+      slots: {
+        title: 'font-semibold sm:text-6xl',
+        container: '!pb-0'
+      }
+    },
+    pageCard: {
+      slots: {
+        container: 'lg:flex min-w-0',
+        wrapper: 'flex-none'
+      }
+    },
     footer: {
       slots: {
         root: 'border-t border-default',
@@ -25,10 +37,10 @@ export default defineAppConfig({
     search: true,
     colorMode: true,
     links: [{
-      'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt-ui-templates/docs',
+      'icon': 'i-simple-icons-instagram',
+      'to': 'https://go.91.pt/instagram',
       'target': '_blank',
-      'aria-label': 'GitHub'
+      'aria-label': 'Instagram'
     }]
   },
   footer: {
@@ -36,19 +48,19 @@ export default defineAppConfig({
     colorMode: false,
     links: [{
       'icon': 'i-simple-icons-discord',
-      'to': 'https://go.nuxt.com/discord',
+      'to': 'https://go.91.pt/discord',
       'target': '_blank',
-      'aria-label': 'Nuxt on Discord'
+      'aria-label': 'on Discord'
     }, {
       'icon': 'i-simple-icons-x',
-      'to': 'https://go.nuxt.com/x',
+      'to': 'https://go.91.pt/x',
       'target': '_blank',
-      'aria-label': 'Nuxt on X'
+      'aria-label': 'on X'
     }, {
-      'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt/ui',
+      'icon': 'i-simple-icons-instagram',
+      'to': 'https://go.91.pt/instagram',
       'target': '_blank',
-      'aria-label': 'Nuxt UI on GitHub'
+      'aria-label': 'on Instagram'
     }]
   },
   toc: {
