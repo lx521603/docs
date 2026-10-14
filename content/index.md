@@ -1,7 +1,7 @@
 ---
 seo:
-  title: Write beautiful docs with Markdown
-  description: Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box. Docus brings together the best of the Nuxt ecosystem. Powered by Nuxt UI.
+  title: Asura
+  description: 老李游记
 ---
 
 ::u-page-hero
@@ -35,7 +35,7 @@ seo:
 
 #headline
   :::u-button{size="sm" to="https://mirai.st" variant="outline"}
-  主站 →
+  佛系更新 →
   :::
 ::
 
@@ -203,20 +203,20 @@ seo:
     ---
       :::::u-color-mode-image
       ---
-      height: 554
-      width: 859
-      alt: Native MCP server and AI-ready content illustration
-      class: rounded-lg
+      height: 600
+      width: 800
+      alt: Beautiful visual powered by UI
+      class: w-full h-140 object-cover rounded-lg
       dark: /landing/DSC00608.webp
       light: /landing/DSC00608.webp
       ---
       :::::
 
     #title
-    Edit your content in production with [Nuxt Studio](https://nuxt.studio)
+    街角微光
 
     #description
-    Write and manage your content visually, with zero Markdown knowledge required. Let your non technical colleagues collaborate on the documentation and integrate Vue components without code skills.
+    她不仅是屏幕那端的温暖陪伴，更是这座城市夜里最动人的微光。
     ::::
 
     ::::u-page-card
@@ -249,10 +249,10 @@ seo:
     ---
       :::::u-color-mode-image
       ---
-      height: 570
+      height: 550
       width: 400
       alt: Beautiful visual powered by UI
-      class: w-full h-150 object-cover rounded-lg
+      class: w-full h-140 object-cover rounded-lg
       dark: /landing/Q30A126.webp
       light: /landing/Q30A126.webp
       ---
@@ -367,4 +367,4 @@ seo:
   :::
 ::
 
-/
+
