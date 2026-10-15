@@ -35,17 +35,19 @@ export default defineAppConfig({
       dark: ''
     },
     search: true,
-    colorMode: true,
-    links: [{
+    links: [
+      {
       'icon': 'i-simple-icons-instagram',
       'to': 'https://go.91.pt/instagram',
       'target': '_blank',
       'aria-label': 'Instagram'
-    }]
+      }
+    ],
+    colorMode: true
   },
   footer: {
     credits: `Asura • © ${new Date().getFullYear()}`,
-    colorMode: false,
+    colorMode: true,
     links: [{
       'icon': 'i-simple-icons-discord',
       'to': 'https://go.91.pt/discord',
@@ -64,7 +66,7 @@ export default defineAppConfig({
     }]
   },
   toc: {
-    title: '章节',
+    title: '本页内容',
     bottom: {
       title: '社区',
       edit: 'https://zaeth.com',

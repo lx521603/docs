@@ -1,20 +1,54 @@
+<script setup lang="ts">
+const props = defineProps<{
+  white?: boolean
+}>()
+
+const color = computed(() => props.white ? 'text-white' : 'text-black dark:text-white')
+
+const isHovering = ref(false)
+const isBlinking = ref(false)
+const isTouchDevice = ref(false)
+
+let blinkTimer: ReturnType<typeof setInterval> | undefined
+
+onMounted(() => {
+  isTouchDevice.value = 'ontouchstart' in window || navigator.maxTouchPoints > 0
+  blinkTimer = setInterval(() => {
+    isBlinking.value = true
+    setTimeout(() => { isBlinking.value = false }, 180)
+  }, 5000)
+})
+
+onBeforeUnmount(() => {
+  if (blinkTimer) clearInterval(blinkTimer)
+})
+</script>
+
 <template>
-  <div class="flex items-center gap-3">
+  <span class="flex items-center gap-2" :class="color">
     <svg
-      class="h-7 w-auto shrink-0"
-      viewBox="0 0 300 200"
+      viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
+      class="size-6"
+      @mouseenter="isHovering = true"
+      @mouseleave="isHovering = false"
     >
       <path
-        d="M168 200H279C282.542 200 285.932 198.756 289 197C292.068 195.244 295.23 193.041 297 190C298.77 186.959 300.002 183.51 300 179.999C299.998 176.488 298.773 173.04 297 170.001L222 41C220.23 37.96 218.067 35.7552 215 34C211.933 32.2448 207.542 31 204 31C200.458 31 197.067 32.2448 194 34C190.933 35.7552 188.77 37.96 187 41L168 74L130 9.99764C128.228 6.95784 126.068 3.75491 123 2C119.932 0.245087 116.542 0 113 0C109.458 0 106.068 0.245087 103 2C99.9323 3.75491 96.7717 6.95784 95 9.99764L2 170.001C0.226979 173.04 0.00154312 176.488 1.90993e-06 179.999C-0.0015393 183.51 0.229648 186.959 2 190C3.77035 193.04 6.93245 195.244 10 197C13.0675 198.756 16.4578 200 20 200H90C117.737 200 137.925 187.558 152 164L186 105L204 74L259 168H186L168 200ZM89 168H40L113 42L150 105L125.491 147.725C116.144 163.01 105.488 168 89 168Z"
-        fill="var(--ui-primary)"
+        v-if="isBlinking || (isHovering && !isTouchDevice)"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M16.0752 0C7.21095 0 0 7.18587 0 16.0501V30.3853C0 31.2771 0.722918 32 1.61468 32H16.1002C24.9367 32 32.1002 24.8366 32.1002 16C32.1002 7.16344 24.9117 0 16.0752 0ZM24.802 16.0501C26.697 16.0501 28.2332 17.8658 28.2332 15.9708C28.2332 15.9708 26.697 15 24.802 15C22.907 15 21.3708 15.9708 21.3708 15.9708C21.3708 17.8658 22.907 16.0501 24.802 16.0501ZM14.6182 16.0501C16.5133 16.0501 18.0494 17.866 18.0494 15.971C18.0494 15.971 16.395 15 14.5 15C12.605 15 11.1871 15.971 11.1871 15.971C11.1871 17.866 12.7233 16.0501 14.6182 16.0501Z"
+        fill="currentColor"
+      />
+      <path
+        v-else
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M16.0752 0C7.21095 0 0 7.18587 0 16.0501V30.3853C0 31.2771 0.722918 32 1.61468 32H16.1002C24.9367 32 32.1002 24.8366 32.1002 16C32.1002 7.16344 24.9117 0 16.0752 0ZM24.802 19.402C26.697 19.402 28.2332 17.8658 28.2332 15.9708C28.2332 14.0758 26.697 12.5396 24.802 12.5396C22.907 12.5396 21.3708 14.0758 21.3708 15.9708C21.3708 17.8658 22.907 19.402 24.802 19.402ZM14.6182 19.4022C16.5133 19.4022 18.0494 17.866 18.0494 15.971C18.0494 14.076 16.5133 12.5398 14.6182 12.5398C12.7233 12.5398 11.1871 14.076 11.1871 15.971C11.1871 17.866 12.7233 19.4022 14.6182 19.4022Z"
+        fill="currentColor"
       />
     </svg>
-
-    <span class="bg-gradient-to-r from-zinc-300 via-zinc-400 to-zinc-600 bg-clip-text text-xl font-semibold tracking-tight text-transparent">
-      Asura Im
-    </span>
-  </div>
+    <span class="font-bold text-2xl">Asura</span>
+  </span>
 </template>

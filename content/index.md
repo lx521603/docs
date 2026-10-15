@@ -25,12 +25,12 @@ seo:
   :::u-button
   ---
   color: neutral
-  icon: simple-icons-instagram
+  icon: simple-icons-blogger
   size: xl
-  to: https://go.91.pt/instagram
+  to: /blog
   variant: outline
   ---
-  Ins
+  Blog
   :::
 
 #headline
@@ -252,7 +252,7 @@ seo:
       height: 550
       width: 400
       alt: Beautiful visual powered by UI
-      class: w-full h-140 object-cover rounded-lg
+      class: rounded-lg
       dark: /landing/Q30A126.webp
       light: /landing/Q30A126.webp
       ---
@@ -273,10 +273,10 @@ seo:
     ---
       :::::u-color-mode-image
       ---
-      height: 560
+      height: 554
       width: 859
-      alt: Native MCP server and AI-ready content illustration
-      class: w-full h-auto rounded-lg translate-y-10
+      alt: Built-in navigation and full-text search
+      class: rounded-lg
       dark: /landing/Q30A5184.webp
       light: /landing/Q30A5184.webp
       ---
@@ -297,12 +297,14 @@ seo:
     ---
       :::::u-color-mode-image
       ---
-      height: 340
+      height: 554
       width: 859
-      alt: Beautiful visual powered by UI
-      class: w-full h-90 object-cover rounded-lg
+      alt: Built-in navigation and full-text search
+      class: rounded-lg
       dark: /landing/Q30A4133.webp
+      format: webp
       light: /landing/Q30A4133.webp
+      loading: lazy
       ---
       :::::
 

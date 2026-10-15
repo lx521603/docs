@@ -18,10 +18,12 @@ useSeoMeta({
 </script>
 
 <template>
-  <ContentRenderer
-    v-if="page"
-    :value="page"
-    :prose="false"
-    :components="{ a: 'prose-a' }"
-  />
+  <div class="w-full -mx-0 sm:-mx-6 lg:-mx-8">
+    <ContentRenderer
+      v-if="page"
+      :value="page"
+      :prose="false"
+      :components="{ a: 'prose-a' }"
+    />
+  </div>
 </template>
