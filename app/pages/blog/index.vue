@@ -16,11 +16,7 @@ useSeoMeta({
 
 <template>
   <UContainer>
-    <UPageHeader
-      title="光影手记"
-      description="用镜头代替眼睛，记录那些被光线温柔抚摸的角落与日常。"
-      class="py-[50px]"
-    />
+    
 
     <UPageBody>
       <UBlogPosts>

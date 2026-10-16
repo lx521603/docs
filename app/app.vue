@@ -48,4 +48,25 @@ provide('navigation', navigation)
       />
     </ClientOnly>
   </UApp>
+  <div
+  class="fixed bottom-4 left-1/2 -translate-x-1/2 z-[9999] bg-gray-900 h-[48px] w-[320px] sm:w-[360px] rounded-full border border-white/30"
+  >
+  <div class="flex justify-around items-center h-full px-2">
+    <NuxtLink to="/" class="p-2 rounded-full hover:bg-white/10 transition-colors">
+      <UIcon name="i-lucide-home" class="size-6 text-white" />
+    </NuxtLink>
+    
+    <NuxtLink to="/getting-started" class="p-2 rounded-full hover:bg-white/10 transition-colors">
+      <UIcon name="i-lucide-book-open" class="size-6 text-white" />
+    </NuxtLink>
+    
+    <NuxtLink to="/blog" class="p-2 rounded-full hover:bg-white/10 transition-colors">
+      <UIcon name="i-lucide-camera" class="size-6 text-white" />
+    </NuxtLink>
+    
+    <NuxtLink to="/tools" class="p-2 rounded-full hover:bg-white/10 transition-colors">
+      <UIcon name="i-lucide-wrench" class="size-6 text-white" />
+    </NuxtLink>
+  </div>
+</div>
 </template>

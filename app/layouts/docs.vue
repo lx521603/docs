@@ -18,5 +18,5 @@ const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 
       <slot />
     </UPage>
-  </UContainer>
+  </UContainer> 
 </template>
