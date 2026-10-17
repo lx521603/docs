@@ -33,6 +33,7 @@ provide('navigation', navigation)
     <AnnouncementBar />
     <AppHeader />
 
+
     <UMain>
       
       <NuxtLayout>

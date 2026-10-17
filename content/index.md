@@ -4,41 +4,32 @@ seo:
   description: 老李游记
 ---
 
-::u-page-hero
-#title
-老李游记
-
-#description
-记录沿途的风景 :br 技术的探索与生活的点滴
-
-#links
-  :::u-button
-  ---
-  color: neutral
-  size: xl
-  to: /getting-started
-  trailing-icon: i-lucide-arrow-right
-  ---
-  文档
-  :::
-
-  :::u-button
-  ---
-  color: neutral
-  icon: simple-icons-blogger
-  size: xl
-  to: /blog
-  variant: outline
-  ---
-  Blog
-  :::
+::NextraHero
+---
+title: 老李游记
+# 👇 传入一个数组，这些词会垂直滚动轮换！
+rotatingWords:
+  - 记录沿途的风景
+  - 技术的探索
+  - 生活的点滴
+  - 光影的收藏
+description: 在这里，每一次快门、每一段文字，都是对时光的温柔收藏。
+---
 
 #headline
-  :::u-button{size="sm" to="https://mirai.st" variant="outline"}
-  佛系更新 →
+  :::u-badge{variant="subtle" icon="i-lucide-sparkles"}
+  v2.0 刚刚发布，佛系更新中 →
+  :::
+
+#links
+  :::u-button{size="lg" to="/getting-started" trailing-icon="i-lucide-arrow-right"}
+  开始阅读
+  :::
+  
+  :::u-button{size="lg" to="/blog" variant="outline" icon="i-simple-icons-blogger"}
+  查看 Blog
   :::
 ::
-
 ::u-page-section
   :::u-page-grid
     ::::u-page-card
