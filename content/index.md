@@ -249,10 +249,10 @@ seo:
     ---
       :::::u-color-mode-image
       ---
-      height: 550
+      height: 525
       width: 400
       alt: Beautiful visual powered by UI
-      class: rounded-lg
+      class: object-cover rounded-lg
       dark: /landing/Q30A126.webp
       light: /landing/Q30A126.webp
       ---
@@ -276,7 +276,7 @@ seo:
       height: 554
       width: 859
       alt: Built-in navigation and full-text search
-      class: rounded-lg
+      class: object-cover rounded-lg
       dark: /landing/Q30A5184.webp
       light: /landing/Q30A5184.webp
       ---
@@ -297,10 +297,10 @@ seo:
     ---
       :::::u-color-mode-image
       ---
-      height: 554
-      width: 859
+      height: 459
+      width: 800
       alt: Built-in navigation and full-text search
-      class: rounded-lg
+      class: w-full h-100 object-cover rounded-lg
       dark: /landing/Q30A4133.webp
       format: webp
       light: /landing/Q30A4133.webp
@@ -318,7 +318,7 @@ seo:
     ::::u-page-card
     ---
     spotlight: true
-    class: col-span-2 lg:col-span-1
+    class: col-span-1 lg:col-span-1
     ---
       :::::div{.flex-1.flex.flex-col.items-center.justify-center.py-8.text-center}
         ::::::div{.flex.flex-col.gap-3.w-full.max-w-xs}
@@ -329,8 +329,9 @@ seo:
           size: lg
           to: https://zaeth.com
           trailing-icon: i-lucide-arrow-right
+         
           ---
-          访问 Zaeth.com
+                        访问 Zaeth.com
           :::::::
 
           :::::::u-button

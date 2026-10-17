@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     'nuxt-studio'
   ],
 
+
   studio: {
     route: '/admin', 
     repository: {

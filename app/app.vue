@@ -30,10 +30,11 @@ provide('navigation', navigation)
 <template>
   <UApp>
     <NuxtLoadingIndicator />
-
+    <AnnouncementBar />
     <AppHeader />
 
     <UMain>
+      
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
