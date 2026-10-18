@@ -50,7 +50,7 @@ jobs:
           script: |
             # 1. 切换到目标目录
             cd /opt/asura/
-            
+            pm2 delete aura-app || true
             # 2. 🌟 最佳实践：使用 Here-Doc 一次性生成/覆盖 .env 文件
             # 这样无论以后加多少个 Secrets，都只需要在这里加一行，且不会遗漏或覆盖其他变量
             cat <<EOF > .env
