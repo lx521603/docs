@@ -5,3 +5,10 @@ allowBuilds:
   esbuild: false
   unrs-resolver: false
   vue-demi: false
+permissions:
+  nuxt-og-image:
+    skills: true
+
+skills:
+  dirs:
+    - .claude/skills
