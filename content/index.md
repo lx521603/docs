@@ -59,13 +59,13 @@ description: 在这里，每一次快门、每一段文字，都是对时光的�
     ::::u-page-card
     ---
     spotlight: true
-    class: col-span-2
+    class: group col-span-2 lg:col-span-2
     target: _blank
     ---
       :::::u-color-mode-image
       ---
-      height: 400
-      width: 859
+      height: 380
+      width: 1000
       alt: Beautiful visual powered by UI
       class: w-full h-100 object-cover rounded-lg
       dark: /landing/Q30A0695.webp
@@ -77,7 +77,7 @@ description: 在这里，每一次快门、每一段文字，都是对时光的�
     每一次快门、每一段文字
 
     #description
-    都是对时光的温柔收藏。这里记录着旅途中的风景、街角的偶遇、以及那些让人忍不住微笑的小确幸。
+    每一次快门、每一段文字,都是对时光的温柔收藏。这里记录着旅途中的风景、街角的偶遇、以及那些让人忍不住微笑的小确幸。
     ::::
 
     ::::u-page-card
@@ -168,8 +168,8 @@ description: 在这里，每一次快门、每一段文字，都是对时光的�
     ---
       :::::u-color-mode-image
       ---
-      height: 554
-      width: 859
+      height: 690
+      width: 1000
       alt: Built-in navigation and full-text search
       class: rounded-lg
       dark: /landing/Q30A5015.webp
@@ -194,10 +194,10 @@ description: 在这里，每一次快门、每一段文字，都是对时光的�
     ---
       :::::u-color-mode-image
       ---
-      height: 600
-      width: 800
+      height: 680
+      width: 1000
       alt: Beautiful visual powered by UI
-      class: w-full h-140 object-cover rounded-lg
+      class: w-full h-120 object-cover rounded-lg
       dark: /landing/DSC00608.webp
       light: /landing/DSC00608.webp
       ---
@@ -207,7 +207,7 @@ description: 在这里，每一次快门、每一段文字，都是对时光的�
     街角微光
 
     #description
-    她不仅是屏幕那端的温暖陪伴，更是这座城市夜里最动人的微光。
+    她不仅是屏幕那端的温暖陪伴，<br>更是这座城市夜里最动人的微光。
     ::::
 
     ::::u-page-card

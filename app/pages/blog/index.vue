@@ -3,7 +3,7 @@ definePageMeta({ layout: 'default' })
 
 const { data: posts } = await useAsyncData('blog-online', () =>
   queryCollection('docs')
-    .where('path', 'LIKE', '/shot/%')
+    .where('path', 'LIKE', '/blog/%')
     .all()
 )
 useSeoMeta({
